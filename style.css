@@ -115,6 +115,27 @@ h2 {
 }
 .visit:hover { text-decoration: underline; }
 
+/* --- watch & listen --- */
+.embed { margin: 0 0 2.5rem; }
+.embed:last-child { margin-bottom: 0; }
+.video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.spotify { display: block; border-radius: 12px; }
+figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--dim);
+  line-height: 1.5;
+}
+figcaption strong { color: var(--fg); font-weight: 500; }
+
 /* --- sketches --- */
 .sketches-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
 .sketches-head h2 { flex: 1; }
