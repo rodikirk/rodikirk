@@ -140,8 +140,17 @@ h2 {
   font-size: 0.78rem;
   color: var(--accent);
   text-decoration: none;
+  margin-right: 1.25rem;
 }
 .visit:hover { text-decoration: underline; }
+.legacy {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--dim);
+  vertical-align: middle;
+}
 
 /* --- watch & listen --- */
 .embed { margin: 0 0 2.5rem; }
