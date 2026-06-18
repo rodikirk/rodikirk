@@ -32,10 +32,21 @@
 
   <section id="work" class="work">
     <h2>Selected work</h2>
+
+    <div class="filters" role="tablist" aria-label="filter work by category">
+      <button class="pill is-on" data-filter="all">all</button>
+      <button class="pill" data-filter="music">music</button>
+      <button class="pill" data-filter="education">education</button>
+      <button class="pill" data-filter="tech">tech</button>
+      <button class="pill" data-filter="dj">dj</button>
+      <button class="pill" data-filter="film">film</button>
+      <button class="pill" data-filter="writing">writing</button>
+    </div>
+
     <ul class="projects">
 
-      <li class="project">
-        <div class="meta"><span class="year">Director of Product &amp; Education</span><span class="tag">music · learning</span></div>
+      <li class="project" data-cat="education tech music">
+        <div class="meta"><span class="year">Director of Product &amp; Education</span><span class="tag">education · tech · music</span></div>
         <h3>Melodics</h3>
         <p>
           The app that's taught millions of people to play keys, pads, and drums — gamified,
@@ -46,8 +57,18 @@
         <a class="visit" href="https://melodics.com">melodics.com →</a>
       </li>
 
-      <li class="project">
-        <div class="meta"><span class="year">2009 — now</span><span class="tag">production · DJ</span></div>
+      <li class="project" data-cat="tech music">
+        <div class="meta"><span class="year">2025 — now</span><span class="tag">tech · music</span></div>
+        <h3>Small music machines</h3>
+        <p>
+          Pocket-sized, browser-native music games — daily seeded puzzles everyone on earth
+          gets at once, built on a tiny shared engine. norns-inspired, touch &amp; MIDI first.
+        </p>
+        <a class="visit" href="https://music-games.rodi-kirk.workers.dev">play →</a>
+      </li>
+
+      <li class="project" data-cat="dj music">
+        <div class="meta"><span class="year">2009 — now</span><span class="tag">dj · music</span></div>
         <h3>Scratch 22</h3>
         <p>
           A decade-plus as a touring DJ and producer — New Zealand Red Bull Thre3style champion,
@@ -57,8 +78,18 @@
         <a class="visit" href="https://open.spotify.com/artist/2YG4B2RvuXscF9PaqDGJhQ">listen →</a>
       </li>
 
-      <li class="project">
-        <div class="meta"><span class="year">ongoing</span><span class="tag">improvised · live</span></div>
+      <li class="project" data-cat="music">
+        <div class="meta"><span class="year">album</span><span class="tag">music</span></div>
+        <h3>Distance From View</h3>
+        <p>
+          A cohesive instrumental hip-hop album as Scratch 22 — built to be heard end to end.
+          Grew out of years of beatmaking, including work with Auckland rapper Tourettes.
+        </p>
+        <a class="visit" href="https://open.spotify.com/artist/2YG4B2RvuXscF9PaqDGJhQ">listen →</a>
+      </li>
+
+      <li class="project" data-cat="music">
+        <div class="meta"><span class="year">ongoing</span><span class="tag">music</span></div>
         <h3>Aron Ottignon &amp; Rodi Kirk</h3>
         <p>
           A long-running partnership with the Paris-based pianist: Aron builds motifs at the
@@ -69,8 +100,8 @@
         <a class="visit" href="https://aronottignon.bandcamp.com/album/spaces-1-castle">hear it →</a>
       </li>
 
-      <li class="project">
-        <div class="meta"><span class="year">2015</span><span class="tag">production · remix</span></div>
+      <li class="project" data-cat="music">
+        <div class="meta"><span class="year">2015</span><span class="tag">music</span></div>
         <h3>Brother Sun (feat. Kimbra)</h3>
         <p>
           The Rodi Kirk &amp; Aron Ottignon version of Electric Wire Hustle's track with Kimbra —
@@ -80,23 +111,45 @@
         <a class="visit" href="https://bastardjazz.bandcamp.com/track/brother-sun-ft-kimbra-rodi-kirk-aron-ottignon-version">hear it →</a>
       </li>
 
-      <li class="project">
-        <div class="meta"><span class="year">Sundance 2016</span><span class="tag">film · score</span></div>
+      <li class="project" data-cat="music dj">
+        <div class="meta"><span class="year">remix</span><span class="tag">music · dj</span></div>
+        <h3>Again (Scratch 22 Remix)</h3>
+        <p>
+          My rework of Electric Wire Hustle's <em>Again</em> — released through Motor City Drum
+          Ensemble's (Danilo Plessow) catalogue.
+        </p>
+        <a class="visit" href="https://daniloplessow.bandcamp.com/track/again-scratch-22-remix">hear it →</a>
+      </li>
+
+      <li class="project" data-cat="film music">
+        <div class="meta"><span class="year">Sundance 2016</span><span class="tag">film · music</span></div>
         <h3>Tickled — score</h3>
         <p>
-          Music for the documentary <em>Tickled</em>, which premiered at the Sundance Film
-          Festival — scoring work alongside my teaching at Catalyst Berlin (formerly dBs Music).
+          Music for the documentary <em>Tickled</em>, which premiered at Sundance. Part of a body
+          of scoring and placement work that's appeared on HBO and Magnolia Pictures, and across
+          the Blue Note, Universal, and !K7 labels.
         </p>
       </li>
 
-      <li class="project">
-        <div class="meta"><span class="year">2025 — now</span><span class="tag">music · games · code</span></div>
-        <h3>Small music machines</h3>
+      <li class="project" data-cat="education">
+        <div class="meta"><span class="year">dBs / Catalyst Berlin</span><span class="tag">education</span></div>
+        <h3>Teaching &amp; curriculum</h3>
         <p>
-          Pocket-sized, browser-native music games — daily seeded puzzles everyone on earth
-          gets at once, built on a tiny shared engine. norns-inspired, touch &amp; MIDI first.
+          As program lead at dBs Music Berlin (now Catalyst), I built courses in music technology
+          and creative production, and continue to tutor — the through-line behind everything I do
+          at Melodics.
         </p>
-        <a class="visit" href="https://music-games.rodi-kirk.workers.dev">play →</a>
+        <a class="visit" href="https://catalyst-berlin.com/stories/rodi-kirk">read the interview →</a>
+      </li>
+
+      <li class="project" data-cat="writing education">
+        <div class="meta"><span class="year">essays</span><span class="tag">writing · education</span></div>
+        <h3>Writing on practice</h3>
+        <p>
+          Essays for Ableton on the science of getting better — myelin, flow, and deliberate
+          practice — and on adapting a full band into a solo Push performance.
+        </p>
+        <a class="visit" href="https://www.ableton.com/en/blog/science-practice-new-ways-develop-your-musical-skills/">the science of practice →</a>
       </li>
 
     </ul>
@@ -113,6 +166,11 @@
     <figure class="embed">
       <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/Tj5hZ0NdsjA" title="Aron Ottignon — A Question of Balance" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
       <figcaption><strong>A Question of Balance</strong> — the Aron Ottignon trio at Berlin's Funkhaus, translating the studio to the stage.</figcaption>
+    </figure>
+
+    <figure class="embed">
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/X1xkRXHVi8M" title="Aron Ottignon — Live Recording Session" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+      <figcaption><strong>Live Recording Session</strong> — Aron Ottignon, captured live.</figcaption>
     </figure>
 
     <figure class="embed">
@@ -152,5 +210,21 @@
   </footer>
 
 </main>
+<script>
+  (function () {
+    var pills = document.querySelectorAll('.pill');
+    var projects = document.querySelectorAll('.project');
+    pills.forEach(function (pill) {
+      pill.addEventListener('click', function () {
+        var f = pill.dataset.filter;
+        pills.forEach(function (p) { p.classList.toggle('is-on', p === pill); });
+        projects.forEach(function (proj) {
+          var show = f === 'all' || (' ' + proj.dataset.cat + ' ').indexOf(' ' + f + ' ') > -1;
+          proj.hidden = !show;
+        });
+      });
+    });
+  })();
+</script>
 </body>
 </html>

@@ -87,8 +87,36 @@ h2 {
   border-bottom: 1px solid var(--line);
 }
 
+/* --- filters --- */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: -0.75rem 0 2rem;
+}
+.pill {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  text-transform: lowercase;
+  letter-spacing: 0.03em;
+  color: var(--dim);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  transition: color .15s, border-color .15s, background .15s;
+}
+.pill:hover { color: var(--fg); border-color: var(--dim); }
+.pill.is-on {
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
 /* --- selected work --- */
 .projects, .feed { list-style: none; margin: 0; padding: 0; }
+.project[hidden] { display: none; }
 
 .project { margin-bottom: 2.75rem; }
 .project .meta {
